@@ -8,9 +8,9 @@ public class SqArea {
      */
     public static double square(int p, double k) {
 
-        double h = Math.PI / (2 * (k + 1));
-        double l = h * k;
-        double rsl = l * h;
+        double h = p / (2 * (k + 1));
+        double l = k * h;
+        double rsl = h * l;
         return rsl;
     }
 
