@@ -15,5 +15,16 @@ public class Converter {
 
         float usd = Converter.rubleToDollar(140.0f);
         System.out.println("140 rubles are " + String.format("%.2f", usd) + " usd.");
+
+        float in = 140.0f;
+        float expected = 2.0f;
+        float out = Converter.rubleToEuro(in);
+        boolean passed = expected == out;
+        System.out.println("140 rubles are" + expected + "usd. Test result : " + passed);
+
+        expected = 2.3333333f;
+        out = Converter.rubleToDollar(in);
+        passed = expected == out;
+        System.out.println("140 rubles are " + expected + " eur. Test result : " + passed);
     }
 }
