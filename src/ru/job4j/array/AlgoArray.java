@@ -7,12 +7,13 @@ public class AlgoArray {
         array[0] = array[3]; /* записываем в ячейку с индексом 0 значение ячейки с индексом 3. */
         array[3] = temp; /* записываем в ячейку с индексом 3 значение временной переменной. */
 
-        for (int i : array) {
+        int[] newArray = sort(array);
+        for (int i : newArray) {
             System.out.println(i);
         }
     }
 
-    public int[] sort(int[] array) {
+    public static int[] sort(int[] array) {
 
         int arrayLength = array.length;
         int tmp;
